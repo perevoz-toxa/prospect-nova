@@ -7,7 +7,7 @@
 1. `story/plan/sheets/chNN.md` — фактлист: контракт главы. Сильнее всего для текущей главы.
 2. `story/state.md` — где история сейчас.
 3. `story/canon/` — истина о фактах мира.
-4. `story/plan/` (synopsis, beats) — намерение.
+4. `story/plan/` (synopsis, beats, scenes) — намерение.
 5. `story/draft/` — проза и голос.
 6. `notes/decisions.md` — логика решений.
 
@@ -18,7 +18,8 @@
 | Команда | Может писать | Не может |
 |---|---|---|
 | `/next` | ничего | всё, что меняет файлы |
-| `/sheet N` | карточка + лист | прозу, state |
+| `/scenes <акт>` | карту сцен `plan/scenes/actN.md` | прозу, state, beats, canon |
+| `/sheet N` | карточку + лист | прозу, state |
 | `/write N` | только `story/draft/chNN.md` | state, canon, decisions, коммиты |
 | `/check N` | ничего | править текст |
 | `/fix N` | только `story/draft/chNN.md` | биты без провалов, state |
